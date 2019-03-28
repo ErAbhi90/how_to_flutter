@@ -6,8 +6,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Container(
+        color: Colors.grey,
         child: Center(
-          child: Text(Strings.textData),
+          child: Text(
+            Strings.textData,
+            textAlign: TextAlign.center,
+            textDirection: TextDirection.ltr,
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 20.0,
+            ),
+          ),
         ),
       ),
     );
