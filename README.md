@@ -1,6 +1,6 @@
 # how_to_flutter
 
-A new Flutter project.
+A Flutter project consisting of how Widgets work and various properties of widgets.
 
 ## Getting Started
 
