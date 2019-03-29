@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:how_to_flutter/resources/strings.dart';
+import 'package:how_to_flutter/widgets/custom_text_font.dart';
 
 class CircularContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    /* Container with circular box decoration
+                Container shape - Circle
+                color - Orange 
+                border_all - width is 2.0 and color red
+                style - Solid
+
+                margin - all sides using EdgeInsets all property
+                padding - defined using symmetry of horizontal and vertical */
+
     return Container(
       decoration: BoxDecoration(
         shape: BoxShape.circle,
@@ -20,14 +30,9 @@ class CircularContainer extends StatelessWidget {
         vertical: 20.0,
       ),
       child: Center(
-        child: Text(
+        child: CustomTextFont(
           Strings.circleText,
-          textAlign: TextAlign.center,
-          textDirection: TextDirection.ltr,
-          style: TextStyle(
-            color: Colors.black,
-            fontSize: 20.0,
-          ),
+          Colors.grey.shade800,
         ),
       ),
     );
