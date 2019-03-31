@@ -5,10 +5,11 @@ class CustomTextFont extends StatelessWidget {
   /* 2. Using custom Roboto Font in style of Text Widget 
         Custom font is downloaded from Google Font website and is defined in pubspec.yaml file
   */
-  final String _textData;
-  final Color _textColor;
+  final String textValue;
+  final Color textColor;
+  final double textFontSize;
 
-  CustomTextFont(this._textData, this._textColor);
+  CustomTextFont({this.textValue, this.textColor, this.textFontSize});
 
 /* 1. Use only fontStyle: FontStyle.normal to use Roboto regular font 
    2. Use only fontWeight: FontWeight.w700 to use bold style font
@@ -19,12 +20,12 @@ class CustomTextFont extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      _textData,
+      textValue,
       textDirection: TextDirection.ltr,
       style: TextStyle(
-        color: _textColor,
+        color: textColor,
         fontFamily: 'Roboto',
-        fontSize: 30.0,
+        fontSize: textFontSize,
         fontStyle: FontStyle.italic,
         fontWeight: FontWeight.w700,
       ),

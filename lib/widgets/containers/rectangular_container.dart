@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:how_to_flutter/resources/strings.dart';
-import 'package:how_to_flutter/widgets/custom_text_font.dart';
+import 'package:how_to_flutter/widgets/containers/custom_text_font.dart';
 
 class RectangularContainer extends StatelessWidget {
   @override
@@ -41,8 +41,9 @@ class RectangularContainer extends StatelessWidget {
       ),
       child: Center(
         child: CustomTextFont(
-          Strings.rectangleText,
-          Colors.yellow.shade600,
+          textColor: Colors.yellow.shade600,
+          textFontSize: 30.0,
+          textValue: Strings.rectangleText,
         ),
       ),
     );

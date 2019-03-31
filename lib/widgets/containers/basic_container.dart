@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:how_to_flutter/resources/strings.dart';
-import 'package:how_to_flutter/widgets/custom_text_font.dart';
+import 'package:how_to_flutter/widgets/containers/custom_text_font.dart';
 
 class BasicContainer extends StatelessWidget {
   @override
@@ -11,8 +11,9 @@ class BasicContainer extends StatelessWidget {
       color: Colors.grey,
       child: Center(
         child: CustomTextFont(
-          Strings.textData,
-          Colors.orange.shade800,
+          textColor: Colors.orange.shade800,
+          textFontSize: 30.0,
+          textValue: Strings.textData,
         ),
       ),
     );

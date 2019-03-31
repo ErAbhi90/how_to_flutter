@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 //import 'package:how_to_flutter/widgets/basic_container.dart';
 //import 'package:how_to_flutter/widgets/circular_container.dart';
-import 'package:how_to_flutter/widgets/rectangular_container.dart';
+//import 'package:how_to_flutter/widgets/rectangular_container.dart';
 
-class MyApp extends StatelessWidget {
+class ContainerExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
 
       /*  child: CircularContainer(), */
 
-      child: RectangularContainer(),
+      /* child: RectangularContainer(), */
     );
   }
 }

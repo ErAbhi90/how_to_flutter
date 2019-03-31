@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:how_to_flutter/resources/strings.dart';
-import 'package:how_to_flutter/widgets/custom_text_font.dart';
+import 'package:how_to_flutter/widgets/containers/custom_text_font.dart';
 
 class CircularContainer extends StatelessWidget {
   @override
@@ -31,8 +31,9 @@ class CircularContainer extends StatelessWidget {
       ),
       child: Center(
         child: CustomTextFont(
-          Strings.circleText,
-          Colors.grey.shade800,
+          textColor: Colors.grey.shade800,
+          textFontSize: 30.0,
+          textValue: Strings.circleText,
         ),
       ),
     );
